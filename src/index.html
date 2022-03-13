@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
+  </head>
+  <body>
+    <!-- header сайта но без навигации -->
+    <include src="./partials/header.html"></include>
+
+    <!-- навигация тут -->
+    <include src="./partials/category_nav.html"></include>
+
+    <!-- Модалка меню с категориями (модилка/планшет) -->
+	<include src="./partials/menuModal.html"></include>
+	
+	<!-- Модалка оголошенн -->
+	<include src="./partials/modal_advert.html"></include>
+
+    <div class="main-containet"></div>
+
+    <include src="./partials/cards.html"></include>
+
+    <!--  страничка результатов поика -->
+    <include src="./partials/search-resoult.html"></include>
+
+    <include src="./partials/category.html"></include>
+
+    <!-- модальное окно "избранное и мои товары" -->
+
+    <include src="./partials/myCabinet/my-cabinet.html"></include>
+
+    <!-- <include src="./partials/favorites.html"></include> -->
+    <!-- <div class="container"><div class="favorites-hbs"></div></div> -->
+
+    <!-- <include src="./partials/my_goods.html"></include> -->
+    <!-- <div class="container"><div class="my-goods-hbs"></div></div> -->
+
+    <!-- модальное окно поиска -->
+    <include src="./partials/search-modal.html"></include>
+
+    <!-- start-page -->
+    <include src="./partials/start-page.html"></include>
+
+    <!-- модальное окно регистрации -->
+    <!-- <include src="./partials/authorisation.html"></include> -->
+    <include src="./partials/modal-autoriz.html"></include>
+
+    <!-- модальное окно добавить обьявление -->
+    <include src="./partials/add-bill-modal.html"></include>
+    <include src="./partials/edit-modal.html"></include>
+
+
+    <!-- выйти из аккаутна модальное окно -->
+    <include src="./partials/exit-modal.html"></include>
+
+    <!-- <div class="test-hbs"></div> -->
+
+
+    <include src="./partials/pagination.html"></include>
+
+    <!-- <include src="./partials/footer.html"></include> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

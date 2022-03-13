@@ -1,0 +1,1 @@
+export const optionalContainerMain = '<div class="container optCont"><ul class="catigories-container js-catigories optContUl"></ul> </div>';

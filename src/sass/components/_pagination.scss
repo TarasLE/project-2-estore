@@ -1,0 +1,38 @@
+.pagination {
+  margin-left: 20px;
+  margin-top: 60px;
+  @media screen and (max-width: 480px) {
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+}
+
+.all-button {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.number-button {
+  border: none;
+}
+
+.work-button {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-style: none;
+  background-color: $primaryWhiteColor;
+  cursor: pointer;
+  @media screen and (max-width: 480px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.work-button:focus {
+  color: $primaryWhiteColor;
+  background-color: #000000;
+  border-style: none;
+}

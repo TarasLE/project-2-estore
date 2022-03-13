@@ -1,0 +1,82 @@
+.modal-menu-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 305px;
+  height: 100%;
+  background-color: $container-color;
+}
+
+.menu-close-icon-wrapper {
+  padding: 0 28px;
+  height: 70px;
+  border-bottom: 1px solid $border-color;
+}
+
+.menu-close-btn {
+  display: block;
+  height: 100%;
+  width: 35px;
+  margin-left: auto;
+}
+
+.menu-my-cabinet {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-text-my-cabinet {
+  margin-left: 10px;
+  margin-right: 8px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.menu-hidden-ads-favorites {
+  width: 100%;
+}
+
+.menu-hidden-link {
+  display: block;
+  padding: 10px;
+}
+
+// .menu-icon-arrow {
+// }
+
+.menu-exit-btn {
+  height: 70px;
+  width: 60px;
+  margin-left: auto;
+}
+
+.icon-cabinet-menu {
+  margin: 20px 0 auto 0;
+}
+
+.my-cabinet-menu-wrapper {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+  border-bottom: 1px solid $border-color;
+}
+
+@media screen and (max-width: $tablet-max) {
+  .categories-item {
+    height: 70px;
+    padding: 26px 34px;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.menu-auth {
+  padding-left: 10px;
+}

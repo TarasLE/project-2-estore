@@ -1,0 +1,31 @@
+{{#each this}}
+
+<li class="cards-st-p slider-item swiper-slide">
+	{{!-- <p style="background-color: red; margin: 0;">1-th child of class="cards"</p> --}}
+	<div class="foto product-card__img-container">
+		<img class="product__image" src="{{imageUrls}}" data-sourse="" width="295" height="275" alt="photo" />
+		<button class="heart-button">
+			<span class="material-icons">
+				favorite_border
+			</span>
+		</button>
+
+		<button class="fullscreen-button">
+			<span class="material-icons">
+				fullscreen
+			</span>
+		</button>
+	</div>
+
+	<div class="cards__text-cont">
+		<h3 class="name-st-p">{{title}}</h3>
+		<div class="price-cont">
+			<h3 class="old-price-st-p is-hidden">{{oldPrice}}<span class="UAH"> грн</span></h3>
+			<h3 class="price-st-p">{{price}}<span> грн</span></h3>
+		</div>
+	</div>
+
+
+</li>
+
+{{/each}}

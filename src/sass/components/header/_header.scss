@@ -1,0 +1,215 @@
+.logo {
+  display: block;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+  @extend %focus-hover-style;
+}
+
+.logo-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $tablet-min) {
+    order: 2;
+  }
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.search-form {
+  @media screen and (min-width: $tablet-min) {
+    order: 1;
+    margin-left: 5px;
+  }
+}
+.search-btn {
+  @extend %focus-hover-style;
+}
+
+.create-ad {
+  @media screen and (min-width: $tablet-min) {
+    order: 4;
+  }
+}
+
+.my-cabinet-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @extend %focus-hover-style;
+
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    padding: 15px;
+  }
+}
+
+.create-ad-btn {
+  display: none;
+
+  background-color: $accentColor;
+  color: $primaryWhiteColor;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  @extend %focus-hover-style;
+
+  @media screen and (min-width: $tablet-min) {
+    display: block;
+    width: 180px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 214px;
+    height: 70px;
+  }
+}
+
+.auth {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    order: 3;
+    margin-right: 10px;
+  }
+}
+
+.registration-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  @extend %focus-hover-style;
+}
+
+.slash {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.login-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  @extend %focus-hover-style;
+}
+
+.menu-btn {
+  width: 55px;
+  height: 70px;
+  padding-right: 15px;
+  border-right: 1px solid $border-color;
+
+  @media screen and (min-width: $tablet-min) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet-min) {
+  .my-cabinet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $desktop) and (min-width: $tablet-min) {
+  .my-cabinet {
+    display: block;
+    order: 3;
+    margin-right: 22px;
+  }
+  .text-my-cabinet {
+    display: none;
+  }
+  .exit-btn {
+    display: none;
+  }
+}
+
+.exit-btn {
+  width: 60px;
+  height: 70px;
+  margin-left: 18px;
+  border-left: 1px solid $border-color;
+
+  @extend %focus-hover-style;
+}
+
+@media screen and (min-width: $desktop) {
+  .my-cabinet {
+    display: flex;
+    order: 3;
+  }
+
+  .text-my-cabinet {
+    margin-left: 11px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+}
+
+.hidden-ads-favorites {
+  display: none;
+  width: 152px;
+  height: 94px;
+  // padding: 10px;
+  position: absolute;
+  top: 70px;
+  left: 400px;
+  background-color: $container-color;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: $tablet-min) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 206px;
+  }
+}
+
+.hidden-link {
+  display: inline-block;
+  padding: 20px 0 0 20px;
+}

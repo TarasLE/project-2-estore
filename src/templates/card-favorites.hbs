@@ -1,0 +1,49 @@
+{{#each this}}
+<li class="cards-st-p swiper-slide">
+    <div class="cards__link ">
+        {{!-- <p style="background-color: red; margin: 0;">1-th child of class="cards"</p> --}}
+        <div class="product-card__img-container-st-p js-product-card" data-category="{{category}}"
+            data-phone="{{phone}}" data-images="{{imageUrls}}" data-price="{{price}}" data-userID="{{userId}}"
+            data-id="{{_id}}" data-description="{{description}}" data-title="{{title}}">
+            {{#each imageUrls}}<img class="product__image" src="{{this}}" alt="photo" />{{/each}}
+
+            {{!-- <div class="buttons-container"> --}}
+                <div class="backdrop-st-p is-hiddeі">
+
+                    <button class="heart-button icons-container">
+                        <span class="material-icons md-15 cards__icons">
+                            favorite_border
+                        </span>
+                    </button>
+
+                    <button id="openEditModal" class="create-button icons-container is-hidde">
+                        <span class="material-icons md-14 cards__icons">
+                            border_color
+                        </span>
+                    </button>
+
+                    <button class="fullscreen-button js-create-button icons-container">
+                        <span class="material-icons md-18 cards__icons">
+                            fullscreen
+                        </span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+            <div class="cards__text-cont">
+                <h3 class="name-st-p">{{title}}</h3>
+                <div class="price-cont">
+                    <h3 class="old-price-st-p is-hidden">{{oldPrice}}<span class="
+								currency UAH"> грн</span></h3>
+                    <h3 class="price-st-p">{{price}}<span class="
+								currency UAH"> грн</span></h3>
+                </div>
+            </div>
+
+        </div>
+
+</li>
+{{/each}}

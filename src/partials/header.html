@@ -1,0 +1,95 @@
+<section id="remove-pl" class="container section-border js-header">
+    <div class="header">
+        <!-- Кнопка меню на мобильном варианте верстки -->
+        <button type="button" class="menu-btn js-menu-btn-mobile">
+            <svg width="15px" height="10px">
+                <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
+
+        <!-- Лого -->
+        <div class="logo-wrap">
+            <a href="./index.html" class="logo">LOGO</a>
+        </div>
+
+        <!-- Кнопка поиска  -->
+        <div class="search-form">
+            <button type="button" class="search-btn" data-modal-open>
+                <svg
+                    width="24"
+                    height="24"
+                    aria-label="Переключатель модального окна"
+                >
+                    <use
+                        class="icon-search"
+                        href="./images/sprite.svg#icon-search-form"
+                    ></use>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Блок мой кабинет, кнопка выход -->
+        <div class="my-cabinet" id="exit.btn">
+            <button class="my-cabinet-btn js-my-cabinet-btn">
+                <svg
+                    class="icon-cabinet"
+                    width="20"
+                    height="21"
+                    aria-label="Мой кабинет"
+                >
+                    <use href="./images/sprite.svg#icon-my-cabinet"></use>
+                </svg>
+                <span
+                    class="text-my-cabinet js-my-cabinet"
+                    data="myCabinet"
+                    id="myCabinet"
+                    >Мiй кабінет</span
+                >
+            </button>
+
+            <!-- Спрятанный блок планшет/десктоп (под хедером) -->
+            <div class="hidden-ads-favorites is-hidden">
+                <a
+                    href=""
+                    class="hidden-link js-myBill"
+                    data="myBill"
+                    id="myBill"
+                    >Мої оголошення</a
+                >
+                <a
+                    href=""
+                    class="hidden-link js-myFavorite"
+                    data="myFavorite"
+                    id="myFavorite"
+                    >Обране</a
+                >
+            </div>
+
+            <!-- Кнопка выход -->
+            <button type="button" class="exit-btn js-exit-button" data-exit>
+                <svg width="20" height="20" aria-label="Кнопка выход">
+                    <use
+                        class="icon-exit"
+                        href="./images/sprite.svg#icon-exit"
+                    ></use>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Блок авторизации, регистрация/вход -->
+        <div class="auth">
+            <button type="button" class="registration-btn" data-register>
+                Реєстрація/Увійти
+            </button>
+            <!-- <span class="slash">/</span>
+      <button type="button" class="login-btn">Увійти</button> -->
+        </div>
+
+        <!-- Кнопка создания объявления -->
+        <div class="create-ad">
+            <button type="button" class="create-ad-btn" data-add-bill>
+                Створити оголошення!
+            </button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,163 @@
+<div class="container">
+    <div class=" backdrop is-hidden" data-modal-edit-bill>
+        <div class="modal-add-bill">
+            <div class="add-modal__content">
+            <h2>роддогуватыи оголошення</h2>
+
+
+            <form class="add-form js-edit-form" autocomplete="on">
+
+
+                <div class="form-items-wrapper">
+                    <div class="add-form__item">
+                        <label class="add-form__label" for="form-name">Назва товару</label>
+                        <div class="input-wrapper">
+                            <input id="nameEdit" value="qwert" type="text" name="titleEdit"
+                                class="add-form__name _req _nameEdit input" />
+                            <div class="add-form__error-message">
+                                Введіть коректну назву товару
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <label class="-bill-form-field">
+                    <span class="modal-form-label">Назва товару</span>
+                    <input type="text" name="name" class="register-form-input _req"  placeholder="" id="nameBill">
+                </label> -->
+
+                    <div class="add-form__item">
+                        <label class="modal-form-label">Фото</label>
+                        <div class="input-wrapper">
+
+                            <ul class="image-preview__edit  _req image-preview__add">
+
+                                <li class="image-preview__item">
+
+                                </li>
+                                <li>
+                                    <div class="choose-image">
+
+                                        <input accept=".jpg" type="file" name="file"
+                                            class="choose-image__input _add-image" id="fileEdit" />
+                                    </div>
+                                    <div class="image-button">+</div>
+                                </li>
+                            </ul>
+                            <div class="add-form__error-message">
+                                Потрібно добавити від 1-го до 5-ти фото
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <label class="bill-form-field">
+                <span class="modal-form-label">фото</span>
+                  <input name="myFile" type="file" id="file" multiple>
+                </label> -->
+
+                    <div class="add-form__item">
+                        <label class="modal-form-label" for="form-description">Опис товару</label>
+                        <div class="input-wrapper">
+                            <textarea name="description" id="form-descriptionEdit" value="qwerwewewqweqweqweqweqwqwqeqeweweweweeqeqweqwet"
+                                class="add-form__description _descriptionEdit _req input" id="aboutEdit"></textarea>
+                            <div class="add-form__error-message">
+                                Коректний опис товару - мінімум 30 символів
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <label class="bill-form-field">
+                    <span class="modal-form-label">Опис товару</span>
+                    <input type="text" name="name" class="register-form-input" value="cati-bear" placeholder="" id="aboutBill">
+                </label> -->
+
+
+                    <div class="add-form__item">
+                        <div class="add-form__label">Категорія товару</div>
+                        <div class="select-wrapper input-wrapper">
+                            <select class="form-control input-sm  _categoryEdit _req input" name="category" id="categoryEdit">//id="sel3">
+                                <option class="select-option select-option-first">
+                                </option>
+                                <option name="category" value="property">Нерухомість</option>
+                                <option name="category" value="transport">Транспорт</option>
+                                <option name="category" value="work">Робота</option>
+                                <option name="category" value="electronics">Електроніка</option>
+                                <option name="category" value="business and services">Бізнес та послуги</option>
+                                <option name="category" value="recreation and sport">Відпочинок і спорт</option>
+                                <option name="category" value="free">Віддам безкоштовно</option>
+                                <option name="category" value="trade">Обмін</option>
+                            </select>
+                            <!-- <select name="product-category" class="add-form__select _category _req input">
+                    <option value="category" class="select-option select-option-first">
+                        Категорія
+                    </option>
+                </select> -->
+                            <div class="add-form__error-message">Виберіть категорію</div>
+                        </div>
+                    </div>
+
+                    <!-- <label class="bill-form-field">
+                    <span class="modal-form-label">Категорія товару</span>
+                    <input type="text" name="name" class="register-form-input" value="trade" placeholder="" id="category">
+                </label> -->
+
+
+                    <div class="add-form__item">
+                        <label class="add-form__label" for="form-price">Ціна</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="priceEdit" name="price"  data-source="price"
+                                class="edit-form__product-price _priceEdit _req input" autocomplete="off" minlength="1"
+                                maxlength="16" placeholder="0.00 грн" />
+                            <div class="add-form__error-message">
+                                Введіть коректну ціну товару
+                            </div>
+                            <div class="add-form__error-message error-price">
+                                Ціна для цїєї категорії має бути 0
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <label class="bill-form-field">
+                    <span class="modal-form-label">Ціна</span>
+                    <input type="tel" name="name" class=""  value="123" placeholder="0.00 грн" id="price">
+                </label> -->
+
+                    <div class="add-form__item">
+                        <label class="add-form__label" for="form-phone">Телефон</label>
+                        <div class="input-wrapper">
+                            <input id="telefonEdit" type="tel" name="phone" data-source="phone" value="+380960792310"
+                                class="add-form__product-telephone-number _phone _req input"
+                                placeholder="+38(0--) --- -- --" />
+                            <div class="add-form__error-message">Введіть номер телефону</div>
+                        </div>
+                    </div>
+
+                    <div class="add-form__item js-delete-add">
+                        <a href="#" class="delete-advert ">
+                            <svg class="delete-icon">
+                                <use href="./images/sprite.svg#icon-file-1"></use>
+                            </svg>
+                            Видалити оголошення</a>
+                    </div>
+                </div>
+
+                <!-- <label class="bill-form-field">
+                    <span class="modal-form-label">Телефон</span>
+                    <input type="tel" name="name" class="" value="+380960792323" placeholder="telefon" id="telefon">
+                </label> -->
+
+
+
+
+                <button type="submit" class="bill-form-button">додати</button>
+            </form>
+
+            <button class="buttons add-bill-close-button close-button" data-modal-add-edit-close>
+                <svg width="24" height="24" class="close-button-icon ">
+                    <use href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            </div>
+
+        </div>
+    </div>
+</div>

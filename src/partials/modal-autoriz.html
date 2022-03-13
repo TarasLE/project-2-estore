@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="backdrop is-hidden" data-modal-register>
+        <div class="form">
+            <!-- <form class="form register-form" data-register-form autocomplete="on"></form> -->
+            <button
+                class="buttons autoriz-close-button"
+                data-modal-register-close
+            >
+                <svg width="24" height="24" class="close-button-icon">
+                    <use href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <h2 class="autoriz-title">
+                Ви можете авторизуватися за допомогою Google Account:
+            </h2>
+            <div class="link-contanier">
+                <a
+                    class="google-link"
+                    href="https://www.google.com/account/about/"
+                >
+                    <svg width="18" height="18" class="icon-google-symbol">
+                        <use
+                            href="./images/sprite.svg#icon-google-symbol"
+                        ></use>
+                    </svg>
+                    Google</a
+                >
+            </div>
+
+            <p>
+                Або за допомогою імейлу і пароля, попередньо зареєструвавшись:
+            </p>
+
+            <div class="form-field">
+                <form
+                    class="register-form"
+                    data-register-form
+                    autocomplete="on"
+                >
+                    <label for="mail" class="register-form-field">
+                        <input
+                            class="form-input register-form-input"
+                            type="email"
+                            name="mail"
+                            placeholder=" "
+                            id="e-mail"
+                        />
+                        <span class="form-label">E-mail</span>
+                    </label>
+
+                    <label for="pwd" class="register-form-field down">
+                        <input
+                            class="form-input register-form-input"
+                            type="password"
+                            name="pwd"
+                            placeholder=" "
+                            id="password"
+                        />
+                        <span class="form-label">Password</span>
+                    </label>
+
+                    <div class="form-button">
+                        <button
+                            class="btn-autoriz login-form-button"
+                            type="submit"
+                            id="login"
+                        >
+                            Увійти
+                        </button>
+                        <button
+                            class="btn-autoriz register-form-button"
+                            type="submit"
+                            id="registerBtn"
+                        >
+                            Зареєструватись
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

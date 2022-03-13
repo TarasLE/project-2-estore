@@ -1,0 +1,45 @@
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  //   width: 30px;
+  //   height: 30px;
+  //   border-radius: 50%;
+  //   pointer-events: initial;
+  cursor: pointer;
+
+  //   &:hover,
+  //   &:focus {
+  //     fill: $accentColor;
+  //   }
+}
+
+.modal-register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: $primaryWhiteColor;
+
+  @media screen and (min-width: 310px) and (max-width: 479px) {
+    width: 290px;
+    height: 542px;
+  }
+  @media screen and(min-width: 480px) and (max-width: 1199px) {
+    width: 650px;
+    height: 583px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 650px;
+    height: 583px;
+  }
+}

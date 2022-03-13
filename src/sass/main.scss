@@ -1,0 +1,15 @@
+@import './base/normalize';
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/placeholders';
+@import './base/base-styles';
+
+@import './components/module';
+@import './components/modal/menuModal';
+@import './components/pagination';
+@import './components/module-autoriz';
+@import './components/slider';
+
+.is-hidden {
+  display: none;
+}

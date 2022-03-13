@@ -1,0 +1,43 @@
+{
+    "name": "team-project-2-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "dev": "parcel src/*.html",
+        "build": "parcel build src/*.html",
+        "predeploy": "npm run build -- --public-url=/team-project-2-js/",
+        "deploy": "gh-pages -d dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TarasLE/team-project-2-js.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TarasLE/team-project-2-js/issues"
+    },
+    "homepage": "https://TarasLE.github.io/team-project-2-js/",
+    "devDependencies": {
+        "@pnotify/core": "^5.2.0",
+        "gh-pages": "^3.1.0",
+        "parcel-plugin-handlebars-precompile": "^1.0.2",
+        "posthtml-include": "^1.6.0",
+        "sass": "^1.26.9"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    },
+    "dependencies": {
+        "flickity": "^2.2.1",
+        "node-forge": "^0.10.0",
+        "parcel-bundler": "^1.12.4",
+        "siema": "^1.5.1",
+        "swiper": "^6.4.5"
+    }
+}

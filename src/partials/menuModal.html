@@ -1,0 +1,83 @@
+<!-- Модалка меню - (планшет/мобилка) -->
+<div id="menu-backdrop" class="backdrop is-hidden">
+  <div class="modal-menu-wrapper">
+    <!-- Кнопка закрыть модалку меню -->
+    <div class="menu-close-icon-wrapper">
+      <button class="menu-close-btn js-menu-close-btn">
+        <svg class="menu-close-icon" width="14" height="14">
+          <use href="./images/sprite.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="my-cabinet-menu-wrapper">
+      <!-- Блок мой кабинет, кнопка выход -->
+      <!-- Иконка кабинет -->
+      <svg class="icon-cabinet-menu" width="20" height="21" aria-label="Мой кабинет">
+        <use href="./images/sprite.svg#icon-my-cabinet"></use>
+      </svg>
+
+      <!-- Кнопка, текст мой кабинет -->
+      <div class="menu-my-cabinet" id="menu-exit.btn">
+        <button class="my-cabinet-btn" data-show-links>
+          <span class="menu-text-my-cabinet">Мiй кабінет</span>
+          <svg class="menu-icon-arrow" width="10" height="6">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+
+        <!-- SVG Кнопка выход -->
+        <button type="button" class="menu-exit-btn js-exit-button" data-exit>
+          <svg width="20" height="20" aria-label="Кнопка выход">
+            <use class="icon-exit" href="./images/sprite.svg#icon-exit"></use>
+          </svg>
+        </button>
+
+        <!-- Спрятанный блок планшет/мобилка -->
+        <div class="menu-hidden-ads-favorites is-hidden">
+          <a href="" class="menu-hidden-link js-myBill" data="myBill" id="myBill">Мої оголошення</a>
+          <a href="" class="menu-hidden-link js-myFavorite" data="myFavorite" id="myFavorite">Обране</a>
+        </div>
+      </div>
+
+      <!-- Блок авторизации, регистрация/вход -->
+      <div class="menu-auth">
+        <button type="button" class="registration-btn" data-register>Реєстрація</button>
+        <span class="slash">/</span>
+        <button type="button" class="login-btn">Увійти</button>
+      </div>
+    </div>
+
+    <!-- Список категорий для модалки -->
+    <!-- <ul class="categories js-categories-list ">
+      <li class="categories-item">
+        <a href="" id="transport" data-category="property" class="category-it">Нерухомість</a>
+      </li>
+      <li class="categories-item category-it">
+        <a href="" id="transport" data-category="transport" class="category-it">Транспорт</a>
+      </li>
+      <li class="categories-item category-it">
+        <a href="" id="work" data-category="work" class="category-it">Робота</a>
+      </li>
+      <li class="categories-item category-it">
+        <a href="" id="electronics" data-category="electronics" class="category-it">Електроніка</a>
+      </li>
+      <li class="categories-item category-it">
+        <a href="" id="business and services" data-category="businessAndServices" class="category-it"
+          >Бізнес та послуги</a
+        >
+      </li>
+      <li class="categories-item category-it">
+        <a href="" id="recreation and sport" data-category="recreationAndSport" class="category-it"
+          >Відпочинок і спорт</a
+        >
+      </li>
+      <li class="categories-item category-it">
+        <a href="" id="free" data-category="free" class="category-it">Віддам безкоштовно</a>
+      </li>
+      <li class="categories-item category-it">
+        <a href="" id="trade" data-category="trade" class="category-it">Обмін</a>
+      </li>
+    </ul> -->
+  </div>
+</div>
